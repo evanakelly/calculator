@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 5vh;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 75vw;
+    min-width: 400px;
+    max-width: 700px;
+    height: 75vh;
+    min-height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "input input input input"
+    "AC AC AC plus"
+    "nine eight seven minus"
+    "six five four multiply"
+    "three two one divide"
+    "zero zero point equals";
+    column-gap: 5px;
+    row-gap: 5px;
+    place-items: stretch;
+    place-content: stretch;
+}
+
+div {
+    border-radius: 3px;
+}
+
+
+.numbers {
+    background-color: grey;
+}
+
+.operators {
+    background-color: dodgerblue;
+}
+
+#input {
+    background-color: grey;
+    grid-area: input;
+}
+
+#AC {
+    grid-area: AC;
+    background-color: lightgrey;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: lightsalmon;
+}
+
+#point {
+    grid-area: point;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        font-size: 40px;
+    }
+    div.container {
+        width: 375px;
+        height: 600px;
+    }
+}
